@@ -1,5 +1,5 @@
 body {
-  background-color: #b49678;
+  background-color: white;
 }
 h1 {
   color: black;
@@ -13,4 +13,37 @@ p {
   line-height: 1.5;
   margin: 20px;
   text-align: center;
+}
+
+.card-box {
+  display: block;
+  padding: 25px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s ease;
+  border: 1px solid #dee2e6;
+  height: 100%;
+}
+
+.card-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* cores */
+.card-ai {
+  background-color: #f8f9fa;
+}
+
+.card-products {
+  background-color: #dfc2a2;
+}
+
+.card-massages {
+  background-color: #c8d5b9;
+}
+
+.card-health {
+  background-color: #bfa6a0;
 }
