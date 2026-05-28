@@ -1,10 +1,36 @@
 body {
   background-color: #f8f5f1;
 }
+
+header {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
+    url("../src/images/bg-white.jpg");
+  filter: sepia(13%);
+  background-size: cover;
+  background-position: center;
+  background-position: center 75%;
+  padding: 160px 30px;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
 .navbar-custum {
   background-color: #f8f5f1 !important;
-  padding: 13px 30px;
-  border-bottom: 1px solid #ebe5dd;
+  padding: 10px 20px;
 }
 
 .navbar-brand {
@@ -69,22 +95,20 @@ h4 {
   color: #55624e;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
   font-weight: 300;
   line-height: 1.7;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 p {
   color: #55624e;
   font-family: "Poppins", sans-serif;
   font-weight: 200;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.5;
   margin: 20px;
   text-align: center;
 }
-
 .card-box {
   display: block;
   padding: 25px;
@@ -101,7 +125,7 @@ p {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* cores */
+/* color */
 .card-ai {
   background-color: #e5e0d6;
 }
@@ -120,4 +144,42 @@ p {
 
 .margin-top-index {
   margin-top: 80px;
+}
+
+.icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 20px;
+  opacity: 0.3;
+}
+.card-box {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 60px 20px;
+  }
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 42px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  .navbar-brand {
+    font-size: 18px;
+  }
+  .card-box p {
+    display: none;
+  }
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
 }
