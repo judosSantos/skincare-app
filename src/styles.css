@@ -2,7 +2,7 @@ body {
   background-color: #f8f5f1;
 }
 
-header {
+.header-index {
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
     url("../src/images/bg-white.jpg");
@@ -27,27 +27,55 @@ header {
     rgba(0, 0, 0, 0) 100%
   );
 }
+.header-pages {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)),
+    url("../src/images/bg-white.jpg");
+  filter: sepia(13%);
+  background-size: cover;
+  background-position: center;
+  background-position: center 75%;
+  padding: 60px 30px;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
 
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 15%,
+    rgba(0, 0, 0, 1) 85%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+.header-pages h2 {
+  margin-top: -30px;
+}
+/* Navbar */
 .navbar-custum {
   background-color: #f8f5f1 !important;
   padding: 10px 20px;
 }
-
 .navbar-brand {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: #55624e !important;
   letter-spacing: 0.3px;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: 1 !important;
 }
-
 .nav-link {
   font-family: "Poppins", sans-serif;
   color: #6f6f6f !important;
   margin-left: 20px;
   transition: 0.3s;
 }
-
 .nav-link:hover {
   color: #c68d6b !important;
 }
@@ -64,6 +92,7 @@ header {
   border-radius: 10px;
   color: #a58a72;
 }
+
 h1 {
   color: #55624e;
   text-align: center;
@@ -79,7 +108,6 @@ h2 {
   font-weight: 400;
   font-size: 64px;
 }
-
 h3 {
   color: #a58a72;
   text-align: center;
@@ -90,7 +118,6 @@ h3 {
   font-size: 18px;
   text-transform: uppercase;
 }
-
 h4 {
   color: #55624e;
   text-align: center;
@@ -99,7 +126,6 @@ h4 {
   line-height: 1.7;
   font-size: 18px;
 }
-
 p {
   color: #55624e;
   font-family: "Poppins", sans-serif;
@@ -109,6 +135,7 @@ p {
   margin: 20px;
   text-align: center;
 }
+/*Card styles just in index page*/
 .card-box {
   display: block;
   padding: 25px;
@@ -118,8 +145,8 @@ p {
   transition: 0.2s ease;
   border: 1px solid #dee2e6;
   height: 100%;
+  text-align: center;
 }
-
 .card-box:hover {
   transform: scale(1.02);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -152,8 +179,101 @@ p {
   margin-bottom: 20px;
   opacity: 0.3;
 }
-.card-box {
+.health-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  width: 73%;
+  margin: 0 auto;
+  gap: 30px;
+}
+.health-video iframe {
+  border-radius: 15px;
+  width: 100%;
+}
+.health-grid ul {
+  margin: 20px 0;
+  font-family: "Poppins", sans-serif;
+  color: #55624e;
+  margin-top: 10px;
+  line-height: 2.5;
+  font-weight: 300;
+}
+.health-grid p {
+  text-align: left;
+  margin-bottom: 50px;
+  line-height: 2;
+  font-weight: 300;
+}
+.health-grid h3 {
+  font-family: "Poppins", sans-serif;
+  color: #c68d6b;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-left: 20px;
+  text-align: left;
+}
+.health-video {
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  height: auto;
+}
+footer {
+  background-color: #f8f5f1;
   text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #6f6f6f;
+  font-size: 14px;
+  background: linear-gradient(to bottom, #f8f5f1, #f3eee7);
+  padding-bottom: 120px;
+}
+
+footer a {
+  color: #6f6f6f;
+  text-decoration: none;
+  font-weight: 500;
+}
+footer a:hover {
+  color: #c68d6b;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.container-footer {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 10px;
+  width: 73%;
+  align-items: center;
+  align-items: start;
+  background-color: #482020;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+.spotify-embed {
+  padding: 20px;
+}
+.social-box {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #b9896d;
+  align-items: flex-start;
+  padding: 20px;
+}
+.social-box a {
+  text-decoration: none;
+  font-weight: 300;
+}
+.social-box a:hover {
+  color: #c68d6b;
 }
 
 @media screen and (max-width: 768px) {
@@ -181,5 +301,51 @@ p {
   .icon {
     width: 32px;
     height: 32px;
+  }
+  .container-footer {
+    grid-template-columns: 1fr;
+    width: 70%;
+    padding-top: 30px;
+  }
+  .spotify-embed iframe {
+    width: 100%;
+    min-width: 0;
+  }
+  .social-box {
+    align-items: center;
+    text-align: center;
+  }
+  .container-footer {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    margin: auto !important;
+    text-align: center;
+  }
+
+  .health-grid {
+    grid-template-columns: 1fr;
+  }
+  .health-video iframe {
+    width: 100%;
+    height: 220px;
+  }
+  .health-grid p {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  .health-grid h3 {
+    letter-spacing: 4px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .health-grid ul {
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+    list-style: none;
+    line-height: normal;
   }
 }
