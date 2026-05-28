@@ -1,13 +1,84 @@
 body {
-  background-color: rgb(251, 251, 251);
+  background-color: #f8f5f1;
+}
+.navbar-custum {
+  background-color: #f8f5f1 !important;
+  padding: 13px 30px;
+  border-bottom: 1px solid #ebe5dd;
+}
+
+.navbar-brand {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #55624e !important;
+  letter-spacing: 0.3px;
+}
+
+.nav-link {
+  font-family: "Poppins", sans-serif;
+  color: #6f6f6f !important;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #c68d6b !important;
+}
+.btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  border-color: #55624e;
+  color: #55624e;
+  padding: 8px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+.form-control {
+  border-radius: 10px;
+  color: #a58a72;
 }
 h1 {
-  color: black;
+  color: #55624e;
   text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  font-size: 66px;
+}
+h2 {
+  color: #c68d6b;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 64px;
+}
+
+h3 {
+  color: #a58a72;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: #55624e;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.7;
+  font-size: 22px;
 }
 
 p {
-  color: black;
+  color: #55624e;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
   font-size: 18px;
   line-height: 1.5;
   margin: 20px;
@@ -32,19 +103,19 @@ p {
 
 /* cores */
 .card-ai {
-  background-color: #f8f9fa;
+  background-color: #e5e0d6;
 }
 
 .card-products {
-  background-color: #dfc2a2;
+  background-color: #f1e9de;
 }
 
 .card-massages {
-  background-color: #c8d5b9;
+  background-color: #f0dfd5;
 }
 
 .card-health {
-  background-color: #bfa6a0;
+  background-color: #d5c0b7;
 }
 
 .margin-top-index {
